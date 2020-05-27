@@ -9,13 +9,13 @@ const assertEqual = function(actual, expected) {
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
-  } else {
-    let result = true;
-    for (let i = 0; i < array1.length; i++) {
-      result = result && array1[i] === array2[i];
-    }
-    return result;
   }
+  for (let i = 0; i < array1.length; i++) { // for in on array gives indices, object is keys
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
+  }
+  return true;
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);

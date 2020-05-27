@@ -6,18 +6,15 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// function implicit return is undefined
 const findKeyByValue = function(object, value) {
-  let answer;
   let keys = Object.keys(object);
 
   for (const key of keys) {
     if (object[key] === value) {
-      answer = key;
-      break;
+      return key;
     }
   }
-  
-  return answer;
 };
 
 const bestTVShowsByGenre = {
