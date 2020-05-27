@@ -39,10 +39,12 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-const word = "hello";
-const results1 = letterPositions(word);
+const word = "hello there"
+const results = letterPositions(word);
 
-assertArraysEqual(results1['h'], [0]);
-assertArraysEqual(results1['e'], [1]);
-assertArraysEqual(results1['l'], [2, 3]);
-assertArraysEqual(results1['o'], [4]);
+assertArraysEqual(results['h'], [0, 7]);
+assertArraysEqual(results['e'], [1, 8, 10]);
+assertArraysEqual(results['l'], [2, 3]);
+assertArraysEqual(results['o'], [4]);
+assertArraysEqual(results['t'], [6]);
+assertArraysEqual(results['r'], [9]);
