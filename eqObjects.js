@@ -51,3 +51,6 @@ const obj6 = { key1: 1, key2: [2, 3, 4] };
 
 assertEqual(eqObjects(obj4, obj5), true);
 assertEqual(eqObjects(obj4, obj6), false);
+assertEqual(eqObjects({}, obj4), false);
+assertEqual(eqObjects(obj4, {}), false);
+assertEqual(eqObjects({}, {}), true);
