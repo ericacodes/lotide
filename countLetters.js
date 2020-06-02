@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const countLetters = function(string) {
   const results = {};
   const stringLower = string.toLowerCase();

@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@ericasun2000/lotide",
+  "version": "1.0.1",
+  "description": "This project was created and published by me as part of my learnings at Lighthouse Labs.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,10 +13,18 @@
     "type": "git",
     "url": "git+https://github.com/ericasun2000/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Erica Sun",
+    "email": "ericasun@seas.upenn.edu",
+    "url": "https://github.com/ericasun2000"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ericasun2000/lotide/issues"
   },
-  "homepage": "https://github.com/ericasun2000/lotide#readme"
+  "homepage": "https://github.com/ericasun2000/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0"
+  }
 }

@@ -12,19 +12,17 @@ const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
-
-
 module.exports = {
   head,
   tail,
-  middle,
-  countLetters,
-  countOnly,
-  findKey,
-  findKeyByValue,
+  without,
   flatten,
+  middle,
+  countOnly,
+  countLetters,
   letterPositions,
+  findKeyByValue,
   map,
   takeUntil,
-  without
+  findKey
 };
